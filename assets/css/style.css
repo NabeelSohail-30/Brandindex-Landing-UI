@@ -822,7 +822,7 @@ tr {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   justify-content: center;
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
@@ -945,11 +945,12 @@ tr {
   flex-direction: row;
   width: 100%;
   margin: auto;
+  gap: 20px;
 }
 
 /* Spotlight Container */
 .spotlight-container {
-  max-width: 800px;
+  min-width: 500px;
   margin: 40px auto;
   padding: 20px;
   background: #ffffff;
@@ -1049,11 +1050,11 @@ tr {
 
 .scores {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin: auto;
+  margin: 40px auto;
 }
 .score-container {
   width: 300px;
@@ -1090,16 +1091,27 @@ tr {
   font-size: larger;
 }
 
+.badges{
+  /* border: 1px solid red; */
+  margin: 10px auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 .badge-container {
-  width: 400px;
+  width: 420px;
   height: 60px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  color: var(--white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 1rem;
+  color: black;
+  box-shadow: -2px 4px 8px 2px rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+  border: 1px solid #aba8a8;
 }
 .badge-box {
   display: flex;
@@ -1109,7 +1121,7 @@ tr {
 .left-section {
   border-radius: 10px;
   height: 100%;
-  width: 40%;
+  width: 36%;
   padding-left: 10px;
   display: flex;
   justify-content: start;
@@ -1119,7 +1131,7 @@ tr {
   font-weight: bold;
 }
 .middle-section {
-  width: 40%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1129,7 +1141,7 @@ tr {
   text-align: center;
 }
 .right-section {
-  width: 20%;
+  width: 24%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1138,7 +1150,7 @@ tr {
 }
 .right-section .badge-grade {
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 20px;
   text-align: center;
 }
 .reach .right-section .badge-grade,
@@ -1150,58 +1162,70 @@ tr {
 }
 
 .awareness .level {
-  color: var(--darkred);
-  border-top: 2px solid var(--darkred);
-  border-bottom: 2px solid var(--darkred);
+  color: red;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  font-weight: bold;
 }
 
 .awareness .right-section,
 .awareness .left-section {
-  background-color: var(--darkred);
+  background-color: red;
+  color: white;
 }
 
 .reach .level {
-  color: var(--skyblue);
-  border-top: 2px solid var(--skyblue);
-  border-bottom: 2px solid var(--skyblue);
+  color: #1885c5;
+  border-top: 2px solid #1885c5;
+  border-bottom: 2px solid #1885c5;
+  font-weight: bold;
 }
 .reach .right-section,
 .reach .left-section {
-  background-color: var(--skyblue);
+  background-color: #1885c5;
+  color: white;
 }
 .preference .level {
-  color: var(--darkblue);
-  border-top: 2px solid var(--darkblue);
-  border-bottom: 2px solid var(--darkblue);
+  color: #043270;
+  border-top: 2px solid #043270;
+  border-bottom: 2px solid #043270;
+  font-weight: bold;
 }
 .preference .right-section,
 .preference .left-section {
-  background-color: var(--darkblue);
+  background-color: #043270;
+  color: white;
 }
 .money .level {
-  color: var(--primary);
-  border-top: 2px solid var(--primary);
-  border-bottom: 2px solid var(--primary);
+  color: #16803a;
+  border-top: 2px solid #16803a;
+  border-bottom: 2px solid #16803a;
+  font-weight: bold;
 }
 .money .right-section,
 .money .left-section {
-  background-color: var(--primary);
+  background-color: #16803a;
+  color: white;
 }
 .loyality .level {
-  color: var(--golden);
-  border-top: 2px solid var(--golden);
-  border-bottom: 2px solid var(--golden);
+  color: #cd8e07;
+  border-top: 2px solid #cd8e07;
+  border-bottom: 2px solid #cd8e07;
+  font-weight: bold;
 }
 .loyality .right-section,
 .loyality .left-section {
-  background-color: var(--golden);
+  background-color: #cd8e07;
+  color: white;
 }
 .brand-analysis {
-  background-color: #215f9a;
+  background-color: #ffffff;
   padding: 1rem;
-  border-radius: 1rem;
-  width: 500px;
-  color: var(--white);
+  border-radius: 20px;
+  width: 540px;
+  color: black;
+  margin: 30px auto;
+  box-shadow: 0px 2px 8px 2px #a1a1a1;
 }
 .brand-analysis h2 {
   margin-bottom: 10px;
@@ -1212,6 +1236,7 @@ tr {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin: 40px auto;
 }
 
 .circle-badge-container {
